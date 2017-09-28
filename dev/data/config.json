@@ -1,9 +1,9 @@
 {
 	"site": {
 		"lang": "en",
-		"title": "Simple product template",
+		"title": "OSSSanitizer",
 		"titleDelim": " | ",
-		"description": "Free simple responsive website template",
+		"description": "Automating Open-Source Software Risk Management with OSSSanitizer",
 		"keywords": "html template, theme, freebie, opensource",
 		"url": "http://website-templates.github.io/simple-product_responsive-template/"
 	},

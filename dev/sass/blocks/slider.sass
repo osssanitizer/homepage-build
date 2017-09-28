@@ -38,7 +38,7 @@ $block: ".slider"
 
 		// $Slider control label ATTR: button-one label
 		&[for=button-one]
-			margin-left: -25px
+			margin-left: -75px
 
 			// $Slider control label ATTR: button-one label CONTEXT: Slider radio button one STATE: checked
 			#{$block}__radio#button-one:checked ~ &
@@ -46,6 +46,7 @@ $block: ".slider"
 
 		// $Slider control label ATTR: button-two label
 		&[for=button-two]
+			margin-left: -25px
 
 			// $Slider control label ATTR: button-two label CONTEXT: Slider radio button two STATE: checked
 			#{$block}__radio#button-two:checked ~ &
@@ -57,6 +58,14 @@ $block: ".slider"
 
 			// $Slider control label ATTR: button-three label CONTEXT: Slider radio button three STATE: checked
 			#{$block}__radio#button-three:checked ~ &
+				background-color: rgba(100,100,100,1)
+
+		// $Slider control label ATTR: button-four label
+		&[for=button-four]
+			margin-left: 75px
+
+			// $Slider control label ATTR: button-four label CONTEXT: Slider radio button four STATE: checked
+			#{$block}__radio#button-four:checked ~ &
 				background-color: rgba(100,100,100,1)
 
 
@@ -76,12 +85,19 @@ $block: ".slider"
 		#{$block}__radio#button-three:checked ~ &
 			margin-top: -950px
 
+		// $Slider items CONTEXT: Slider radio button four STATE: checked
+		#{$block}__radio#button-four:checked ~ &
+			margin-top: -1425px
+
 		@media screen and (max-width:800px)
 			#{$block}__radio#button-two:checked ~ &
 				margin-top: -280px
 
 			#{$block}__radio#button-three:checked ~ &
 				margin-top: -560px
+
+			#{$block}__radio#button-four:checked ~ &
+				margin-top: -840px
 
 	// $Slider item
 	&__item
